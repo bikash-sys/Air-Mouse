@@ -36,7 +36,8 @@ It is basically a small **motion-controlled wireless mouse** which can be used w
 
 I have added the complete circuit diagram below. You can use it as a reference while wiring your own Air Mouse.
 
-<img width="1000" alt="Air Mouse Circuit Diagram" src="YOUR_IMAGE_LINK_HERE" />
+<img width="329" height="391" alt="Screenshot 2026-08-07 at 11 23 47 AM" src="https://github.com/user-attachments/assets/70f70128-d38e-4bfa-9297-b880beb8d827" />
+
 
 ### Main Connections
 
@@ -77,28 +78,22 @@ I have uploaded all the needed code, CAD models and circuit diagram in my repo.
 
 **step 7:** Open the Bluetooth settings on your laptop/PC and connect to the device named:
 
-```text
 AIRMOUSE
-```
 
 Once connected, rotating the Air Mouse will control the cursor.
 
 **step 8:** The buttons work like this:
 
-```text
 Short press Left  → Left click
 Short press Right → Right click
 
 Hold Left  → Scroll down
 Hold Right → Scroll up
-```
 
 **step 9:** If the cursor direction feels wrong for your particular physical orientation of the MPU6050, you can change the signs in the movement calculation. In my current setup I have inverted the X axis:
 
-```cpp
 float moveXf = -(fX * sensitivity);
 float moveYf =  (fY * sensitivity);
-```
 
 **step 10:** Finally, assemble everything inside the 3D printed body. The exact placement of the MPU6050 matters because its orientation determines how the Air Mouse responds to your hand movements.
 
@@ -115,9 +110,9 @@ float moveYf =  (fY * sensitivity);
 
 ## CAD Models
 
-<img width="1000" alt="Air Mouse CAD Model" src="YOUR_IMAGE_LINK_HERE" />
+<img width="1512" height="982" alt="Screenshot 2026-08-11 at 8 40 32 PM" src="https://github.com/user-attachments/assets/bedb9a44-6329-46ce-9ee5-781483717fb4" />
 
-<img width="1000" alt="Air Mouse CAD Assembly" src="YOUR_IMAGE_LINK_HERE" />
+<img width="1512" height="982" alt="Screenshot 2026-08-11 at 8 40 41 PM" src="https://github.com/user-attachments/assets/1de3e013-86ee-4509-b923-dfe088031c24" />
 
 The CAD files are included in the repository so that the body can be modified or 3D printed directly.
 
@@ -125,18 +120,16 @@ The CAD files are included in the repository so that the body can be modified or
 
 The main code uses:
 
-- `Wire.h` for I²C communication with the MPU6050
-- `MPU6050.h` for reading the gyroscope
-- `BleMouse.h` for Bluetooth HID mouse functionality
+- Wire.h for I²C communication with the MPU6050
+- MPU6050.h for reading the gyroscope
+- BleMouse.h for Bluetooth HID mouse functionality
 
 The main parameters can be adjusted directly in the code:
 
-```cpp
 float smoothing   = 0.82;
 float sensitivity = 0.20;
 int deadzone      = 1;
-```
 
-So if the cursor is too slow, increase `sensitivity`. If the cursor feels too shaky, increase `smoothing`.
+So if the cursor is too slow, increase sensitivity. If the cursor feels too shaky, increase smoothing.
 
-The whole idea is pretty simple but I think it makes a normal mouse quite interesting — **instead of moving the mouse, you move the mouse itself.**
+The whole idea is pretty simple but I think it makes a normal mouse quite interesting — instead of moving the mouse, you move the mouse itself.
