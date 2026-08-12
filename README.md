@@ -24,12 +24,12 @@ It is basically a small **motion-controlled wireless mouse** which can be used w
 
 | Component | Quantity | Price | Purpose | Purchase Link |
 |-----------|:--------:|:-----:|---------|:-------------:|
-| ESP32-C3 Super Mini | 1 | — | Main controller and Bluetooth HID | [Buy Here](https://robocraze.com/products/esp32-c3-mini-development-board-unsoldered?variant=48465411506400&country=IN&currency=INR) |
-| MPU6050 | 1 | — | Gyroscope and motion sensing | [Buy Here](https://robocraze.com/products/mpu-6050-triple-axis-accelerometer-gyroscope-module) |
-| TP4056 Type-C Module | 1 | — | Li-ion battery charging and protection | [Buy Here](https://robocraze.com/products/tp4056-battery-charger-c-type-module-with-protection-1) |
-| 3.7V 2500mAh 18650 Li-ion Battery | 1 | — | Power source | [Buy Here](https://robocraze.com/products/3-7v-2500mah-18650-li-ion-battery) |
-| 18650 Single Cell Holder | 1 | — | Battery mounting | [Buy Here](https://robocraze.com/products/18650-1-cell-holder) |
-| Tactile Push Button | 2 | — | Left and right mouse buttons | [Buy Here](https://www.amazon.in/Tactile-momentry-button-Switch-Button/dp/B07NCZJX3M) |
+| ESP32-C3 Super Mini | 1 | $2.53 | Main controller and Bluetooth HID | [Buy Here](https://robocraze.com/products/esp32-c3-mini-development-board-unsoldered?variant=48465411506400&country=IN&currency=INR) |
+| MPU6050 | 1 | $1.48 | Gyroscope and motion sensing | [Buy Here](https://robocraze.com/products/mpu-6050-triple-axis-accelerometer-gyroscope-module) |
+| TP4056 Type-C Module | 1 | $0.17 | Li-ion battery charging and protection | [Buy Here](https://robocraze.com/products/tp4056-battery-charger-c-type-module-with-protection-1) |
+| 3.7V 2500mAh 18650 Li-ion Battery | 1 | $1.00 | Power source | [Buy Here](https://robocraze.com/products/3-7v-2500mah-18650-li-ion-battery) |
+| 18650 Single Cell Holder | 1 | $0.17 | Battery mounting | [Buy Here](https://robocraze.com/products/18650-1-cell-holder) |
+| Tactile Push Button | 2 | $1.20 | Left and right mouse buttons | [Buy Here](https://www.amazon.in/Tactile-momentry-button-Switch-Button/dp/B07NCZJX3M) |
 | 3D Printed Parts | As required | Self-manufactured | Air Mouse body and structural parts | Self Printed |
 
 ## Circuit Diagram
